@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: webapl-16
 spec:
-  replicas: 3
+  replicas: 30
   selector:
     matchLabels:
       app: webapl-16
