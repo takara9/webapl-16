@@ -13,4 +13,5 @@ spec:
   - name: https
     protocol: TCP
     port: 443
-  type: LoadBalancer
+  #type: LoadBalancer
+  type: ClusterIP
