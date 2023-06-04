@@ -13,8 +13,11 @@ spec:
       labels:
         app: webapl-16
     spec:
+      securityContext:
+        runAsUser: 101
+        fsGroup: 101
       containers:
       - name: nginx
-        image: nginx:latest
-
-
+        image: maho/nginx:1.25
+        securityContext:
+          allowPrivilegeEscalation: false
