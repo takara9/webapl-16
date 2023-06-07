@@ -18,6 +18,6 @@ spec:
         fsGroup: 101
       containers:
       - name: nginx
-        image: maho/nginx:1.25
+        image: maho/nginx:1.25.2
         securityContext:
           allowPrivilegeEscalation: false
