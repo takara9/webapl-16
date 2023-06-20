@@ -14,10 +14,13 @@ spec:
         app: webapl-16
     spec:
       securityContext:
-        runAsUser: 101
-        fsGroup: 101
+        #runAsUser: 101
+        #fsGroup: 101
+        runAsUser: 10000
+        fsGroup: 10000
       containers:
       - name: nginx
-        image: maho/nginx:1.25.2
+        #image: maho/nginx:1.25.2
+        image: quay.io/cybozu/testhttpd:0.1.9
         securityContext:
           allowPrivilegeEscalation: false
